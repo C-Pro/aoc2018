@@ -30,7 +30,7 @@ def tick():
                 worker["Task"] = None
                 worker["Working"] = 0
                 tasks += task
-    print(workers)
+    # print(workers)
     return tasks
 
 
@@ -78,7 +78,6 @@ Step F must be finished before step E can begin.
     second = 0
     while len(distinct) > 0:
         notused = distinct.difference(seqWorkers)
-        print(notused)
         validmoves = [c for c in notused if canput(c, seqWorkers)]
         nextC = None
         if len(validmoves) > 0:
